@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:220197470235:task-definition/loan_app_task:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:039612853328:task-definition/loan_app_task:1",
     "containerDefinitions": [
         {
             "name": "loan_app_container",
-            "image": "220197470235.dkr.ecr.us-east-1.amazonaws.com/flask_loan_repo@sha256:e9e1627b148a1f339098cedc529b23abae87c13055f8b49815826638b0a6a13b",
+            "image": "039612853328.dkr.ecr.us-east-1.amazonaws.com/flask_loan_repo:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -34,9 +34,9 @@
         }
     ],
     "family": "loan_app_task",
-    "executionRoleArn": "arn:aws:iam::220197470235:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::039612853328:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 1,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -51,9 +51,6 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -71,7 +68,6 @@
     "placementConstraints": [],
     "compatibilities": [
         "EC2",
-        "MANAGED_INSTANCES",
         "FARGATE"
     ],
     "requiresCompatibilities": [
@@ -83,8 +79,8 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2026-02-05T06:27:43.451Z",
-    "registeredBy": "arn:aws:iam::220197470235:root",
+    "registeredAt": "2025-08-16T01:59:36.374Z",
+    "registeredBy": "arn:aws:iam::039612853328:user/devops_user_1350381_63424",
     "enableFaultInjection": false,
     "tags": []
 }
