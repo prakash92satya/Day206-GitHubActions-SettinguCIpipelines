@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:220197470235:task-definition/loan_app_task:2",
+    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:285633211459:task-definition/loan_app_task:1",
     "containerDefinitions": [
         {
             "name": "loan_app_container",
-            "image": "220197470235.dkr.ecr.us-east-1.amazonaws.com/flask_loan_repo@sha256:e9e1627b148a1f339098cedc529b23abae87c13055f8b49815826638b0a6a13b",
+            "image": "285633211459.dkr.ecr.eu-north-1.amazonaws.com/flask_loan_repo@sha256:4ee221b5dce3255f3f2307a3190d5f26b3f651baa133ff6784b80f990f118d5f",
             "cpu": 0,
             "portMappings": [
                 {
@@ -25,7 +25,7 @@
                 "options": {
                     "awslogs-group": "/ecs/loan_app_task",
                     "awslogs-create-group": "true",
-                    "awslogs-region": "us-east-1",
+                    "awslogs-region": "eu-north-1",
                     "awslogs-stream-prefix": "ecs"
                 },
                 "secretOptions": []
@@ -34,9 +34,9 @@
         }
     ],
     "family": "loan_app_task",
-    "executionRoleArn": "arn:aws:iam::220197470235:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::285633211459:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 1,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,8 +83,8 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2026-02-05T06:27:43.451Z",
-    "registeredBy": "arn:aws:iam::220197470235:root",
+    "registeredAt": "2026-02-12T05:58:58.641Z",
+    "registeredBy": "arn:aws:iam::285633211459:user/devops_user_1708047_139397",
     "enableFaultInjection": false,
     "tags": []
 }
