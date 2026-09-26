@@ -36,4 +36,12 @@ flask_loan_app
 aws ecr create-repository --repository-name flask_loan_app --region us-west-2
 delte aws ecr delete-repository --repository-name my-ecr-repo--force
 
+
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 913949992608.dkr.ecr.us-west-2.amazonaws.com
+
+docker build -t flask_loan_app .
 docker build --platform=linux/amd64 -t flask_loan_app .
+
+docker tag flask_loan_app:latest 913949992608.dkr.ecr.us-west-2.amazonaws.com/flask_loan_app:latest
+
+docker push 913949992608.dkr.ecr.us-west-2.amazonaws.com/flask_loan_app:latest
