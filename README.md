@@ -27,3 +27,13 @@ creating web-api using flask
 
 Settings-Secret Varaibles-> [secret]-> New Repo. Secret-> AWS_ACCESS_KEY_ID : AKFIDFDAUFAIQ5RBWCIDFDF
 Settings-Secret Varaibles-> [secret]-> New Repo. Secret-> AWS_SECRET_ACCESS_KEY:nquO4vxhgfgfmxBGxa1vmLkbSfdshsfdtjhgf
+
+
+# methods
+
+flask_loan_app
+
+aws ecr create-repository --repository-name flask_loan_app --region us-west-2
+delte aws ecr delete-repository --repository-name my-ecr-repo--force
+
+docker build --platform=linux/amd64 -t flask_loan_app .
