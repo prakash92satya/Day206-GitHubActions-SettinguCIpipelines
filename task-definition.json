@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-west-2:913949992608:task-definition/loan_app_task:3",
+    "taskDefinitionArn": "arn:aws:ecs:us-west-2:913949992608:task-definition/loan_app_task:1",
     "containerDefinitions": [
         {
             "name": "loan_app_container",
